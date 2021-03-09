@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- Page Header -->
+
 <div class="page-header">
     <div class="row align-items-center">
         <div class="col">
@@ -17,7 +17,7 @@
 
     </div>
 </div>
-<!-- /Page Header -->
+
 
 <div class="row">
     <div class="col-md-12">
