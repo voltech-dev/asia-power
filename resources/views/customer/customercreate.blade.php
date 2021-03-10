@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="page-header">
     <div class="row align-items-center">
         <div class="col">
@@ -14,10 +13,8 @@
                 <li class="breadcrumb-item active">Add Customer</li>
             </ul>
         </div>
-
     </div>
 </div>
-
 
 <div class="row">
     <div class="col-md-12">
