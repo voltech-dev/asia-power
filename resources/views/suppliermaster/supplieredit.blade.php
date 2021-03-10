@@ -38,52 +38,52 @@
                     </ul>
                 </div>
                 @endif
-                <form action="{{ url('/supplierstore') }}" method="POST">
+                <form action="{{ url('/supplierupdate/'.$tests->id) }}" method="POST">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label> Supplier Name</label>
-                                <input type="text" class="form-control" id="suppliername" name="suppliername">
+                                <input type="text" class="form-control" id="suppliername" name="suppliername" value="{{$tests->suppliername}}">
                             </div>
                             <div class="form-group">
                                 <label>Supplier Address</label>
-                                <textarea name="supplieraddress" class="form-control" rows="2" cols="20"></textarea>
+                                <textarea name="supplieraddress" class="form-control" rows="2" cols="20">"{{$tests->supplieraddress}}"</textarea>
                             </div>
                             <div class="form-group">
                                 <label>CIN NO</label>
-                                <input type="text" class="form-control pass-input" name="cinno" id="cinno">
+                                <input type="text" class="form-control pass-input" name="cinno" id="cinno" value="{{$tests->cinno}}">
                             </div>
 
 
                             <div class="form-group">
                                 <label>GST NO</label>
                                 <input type="text" class="form-control pass-input" name="gstno"
-                                    id="gstno">
+                                    id="gstno" value="{{$tests->gstno}}">
                             </div>
                             
                             <div class="form-group">
                                 <label>Contact Person</label>
                                 <input type="text" class="form-control pass-input" name="contactperson"
-                                    id="contactperson">
+                                    id="contactperson" value="{{$tests->contactperson}}">
                             </div>
                             
                             <div class="form-group">
                                 <label>Contact No</label>
                                 <input type="text" class="form-control pass-input" name="contactno"
-                                    id="contactno">
+                                    id="contactno"value="{{$tests->contactno}}">
                             </div>
                             
                             <div class="form-group">
                                 <label>Contact Email</label>
                                 <input type="email" class="form-control pass-input" name="contactemail"
-                                    id="contactemail">
+                                    id="contactemail"value="{{$tests->contactemail}}">
                             </div>
 
                         </div>
                     </div>
                     <div class="text-right mt-4">
-                        <button type="submit" class="btn btn-primary">Add Supplier</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>

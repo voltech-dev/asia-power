@@ -20,9 +20,15 @@
 
                     </ul>
                 </li>
-                <li class="">
-                    <a href=""><i data-feather="user-plus"></i> <span>Purchase</span></a>
+                
+                <li class="submenu ">
+                    <a href="#"><i data-feather="grid"></i> <span>Purchase</span> <span class="menu-arrow"></span></a>
+                    <ul>
+                        <li><a class="" href="supplierentry">Supplier Master</a></li>
+
+                    </ul>
                 </li>
+                
                 <li class="">
                     <a href="#"><i data-feather="grid"></i> <span>MIS Report</span> <span class="menu-arrow"></span></a>
                     <ul>

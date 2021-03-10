@@ -36,7 +36,6 @@ require __DIR__.'/auth.php';
 Route::get('/customerentry',[App\Http\Controllers\AdminController::class, 'customerentry']);
 Route::get('/customercreate',[App\Http\Controllers\AdminController::class, 'customercreate']);
 Route::post('/customerstore',[App\Http\Controllers\AdminController::class, 'customerstore']);
-
 Route::get('/customeredit/{id}',[App\Http\Controllers\AdminController::class, 'customeredit']);
 Route::post('/customerupdate/{id}',[App\Http\Controllers\AdminController::class, 'customerupdate']);
 Route::get('/destroy/{id}',[App\Http\Controllers\AdminController::class, 'destroy']);
@@ -45,7 +44,14 @@ Route::get('/destroy/{id}',[App\Http\Controllers\AdminController::class, 'destro
 Route::get('/hsn',[App\Http\Controllers\AdminController::class, 'hsn']);
 Route::get('/hsncreate',[App\Http\Controllers\AdminController::class, 'hsncreate']);
 Route::post('/hsnstore',[App\Http\Controllers\AdminController::class, 'hsnstore']);
-
 Route::get('/hsnedit/{id}',[App\Http\Controllers\AdminController::class, 'hsnedit']);
 Route::post('/hsnupdate/{id}',[App\Http\Controllers\AdminController::class, 'hsnupdate']);
 Route::get('/delete/{id}',[App\Http\Controllers\AdminController::class, 'delete']);
+
+
+Route::get('/supplierentry',[App\Http\Controllers\AdminController::class, 'supplier']);
+Route::get('/suppliercreate',[App\Http\Controllers\AdminController::class, 'suppliercreate']);
+Route::post('/supplierstore',[App\Http\Controllers\AdminController::class, 'supplierstore']);
+Route::get('/supplieredit/{id}',[App\Http\Controllers\AdminController::class, 'supplieredit']);
+Route::post('/supplierupdate/{id}',[App\Http\Controllers\AdminController::class, 'supplierupdate']);
+Route::get('/deletes/{id}',[App\Http\Controllers\AdminController::class, 'deletes']);

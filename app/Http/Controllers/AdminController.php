@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\Customer;
 use App\Models\Hsncode;
+use App\Models\Supplier;
 
 
 class AdminController extends Controller
@@ -148,4 +149,57 @@ class AdminController extends Controller
         
     
     }
+    
+    public function supplier()
+    {
+        return view('suppliermaster.supplierentry',[
+            'suppliers'=>Supplier::all(),
+        ]);
+    }
+    
+    public function suppliercreate()
+    {
+        return view('suppliermaster.suppliercreate');
+    }
+    public function supplierstore(Request $request)
+    {
+        $sub = new Supplier ;
+        $sub->suppliername= $request->suppliername;
+        $sub->supplieraddress= $request->supplieraddress;
+        $sub->cinno= $request->cinno;
+        $sub->gstno= $request->gstno;
+        $sub->contactperson= $request->contactperson;
+        $sub->contactno= $request->contactno;
+        $sub->contactemail= $request->contactemail;
+        $sub->save();
+        
+        return redirect('/supplierentry');
+    }
+    public function supplieredit($id)
+    {
+     $tests = Supplier::find($id);
+        return view('suppliermaster.supplieredit',['tests'=>$tests]);
+    }
+    public function supplierupdate(Request $request,$id)
+    {
+
+        $ups = Supplier::findorfail($id);
+        $ups->suppliername= $request->suppliername;
+        $ups->supplieraddress= $request->supplieraddress;
+        $ups->cinno= $request->cinno;
+        $ups->gstno= $request->gstno;
+        $ups->contactperson= $request->contactperson;
+        $ups->contactno= $request->contactno;
+        $ups->contactemail= $request->contactemail;
+        $ups->save();
+    return redirect('/supplierentry');
+    }
+    public function deletes(Request $request,$id){
+        $deletes = Supplier::findorfail($id);    
+        $deletes->delete();
+        return redirect('/supplierentry');
+        
+    
+    }
+   
 }
