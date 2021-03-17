@@ -6,7 +6,7 @@
 <div class="page-header">
     <div class="row align-items-center">
         <div class="col">
-            <h3 class="page-title">User</h3>
+            <h3 class="page-title">Supplier</h3>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{url('/dashboard')}}">Dashboard</a>
                 </li>

@@ -19,6 +19,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
+
+
+
+    <link rel="stylesheet" href="{{asset('/css/demo.css')}}">
+
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="{{asset('/plugins/fontawesome/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/plugins/fontawesome/css/all.min.css')}}">

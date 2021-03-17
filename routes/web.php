@@ -55,3 +55,13 @@ Route::post('/supplierstore',[App\Http\Controllers\AdminController::class, 'supp
 Route::get('/supplieredit/{id}',[App\Http\Controllers\AdminController::class, 'supplieredit']);
 Route::post('/supplierupdate/{id}',[App\Http\Controllers\AdminController::class, 'supplierupdate']);
 Route::get('/deletes/{id}',[App\Http\Controllers\AdminController::class, 'deletes']);
+
+
+
+Route::get('/categoryentry',[App\Http\Controllers\AdminController::class, 'categoryentry']);
+Route::get('/categorycreate',[App\Http\Controllers\AdminController::class, 'categorycreate']);
+Route::post('/categorystore',[App\Http\Controllers\AdminController::class, 'categorystore']);
+Route::post('/specificationstore',[App\Http\Controllers\AdminController::class, 'specificationstore']);
+Route::get('/categoryedit/{id}',[App\Http\Controllers\AdminController::class, 'categoryedit']);
+Route::post('/updatecs/{id}',[App\Http\Controllers\AdminController::class, 'updatecs']);
+Route::get('/deleted/{id}',[App\Http\Controllers\AdminController::class, 'deleted']);

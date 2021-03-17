@@ -8,6 +8,8 @@ use App\Models\User;
 use App\Models\Customer;
 use App\Models\Hsncode;
 use App\Models\Supplier;
+use App\Models\Category;
+use App\Models\Categoryspecific;
 
 
 class AdminController extends Controller
@@ -201,5 +203,63 @@ class AdminController extends Controller
         
     
     }
+    public function categoryentry()
+   {
+       return view('category.categoryentry');
+   }
+   public function categorycreate()
+   {
+       return view('category.categorycreate');
+   }
+   public function categorystore(Request $request)
+    {
+        $subject = new Category ;
+        $subject->class= $request->class;
+        $subject->categoryname= $request->categoryname;
+        $subject->categorycode= $request-> categorycode;
+        $subject->save();
+        
+        return redirect('/categorycreate');
+    }
+    
+   public function specificationstore(Request $request)
+   {
+       $down = new Categoryspecific;
+       $down->category= $request->category;
+       $down->specificationcode= $request->specificationcode;
+       $down->specification= $request-> specification;
+       $down->uom= $request-> uom;
+       $down->decription= $request-> decription;
+       $down->make= $request-> make;
+       $down->save();
+       return redirect('/categoryentry');
+       
+   }
+   public function categoryedit($id)
+    {
+     $codemaster = Categoryspecific::find($id);
+        return view('category.categoryedit',['codemaster'=>$codemaster]);
+    }
+    
+   public function updatecs(Request $request,$id)
+   {
+//$up = new Hsncode ;
+       $ups = Categoryspecific::findorfail($id);
+       $ups->decription= $request-> decription;
+       $ups->specificationcode= $request->specificationcode;
+       
+       $ups->uom= $request-> uom;
+  
+       $ups->make= $request-> make;
+       $ups->save();
+   return redirect('/categoryentry');
+   }
+   public function deleted(Request $request,$id){
+       $deleted = Categoryspecific::findorfail($id);    
+       $deleted->delete();
+       return redirect('/categoryentry');
+       
+   
+   }
    
 }
