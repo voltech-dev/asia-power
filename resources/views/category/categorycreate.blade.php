@@ -54,16 +54,16 @@
 
                 <div id="London" class="tabcontent">
                     <h3>Add New Category</h3>
-                    <form action="{{ url('/categorystore') }}"  method="POST">
+                    <form action="{{ url('/categorystore') }}" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
 
                                 <div class="form-group">
                                     <label>Class</label>
-                                    <input type="radio" id="a"  name="class">A
+                                    <input type="radio" id="a" name="class">A
                                     <input type="radio" id="b" name="class">B
-                                    <input type="radio" id="C"  name="class">C
+                                    <input type="radio" id="C" name="class">C
 
 
                                 </div>
@@ -81,12 +81,21 @@
 
 
                                 </div>
-                                <div class="text-center"> 
-
-                                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                                    <button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-left">
+                                            <button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-right">
+                                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
-                             
+
+
+
                             </div>
                         </div>
                     </form>
@@ -133,24 +142,29 @@
                                     </select>
 
                                 </div>
-                                <div class="foem-group">
+                                <div class="form-group">
                                     <label>Decription</label>
                                     <input type="text" name="decription" class="form-control pass-input">
                                 </div>
-                                <div class="foem-group">
+                                <div class="form-group">
                                     <label>Make</label>
                                     <input type="text" name="make" class="form-control pass-input">
                                 </div>
-                                <div class="text-center">
 
-                                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                                    <button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-left">
+                                            <button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-right">
+                                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
-
-
-
                         </div>
                     </form>
                 </div>
@@ -159,7 +173,7 @@
 
 
 
-                
+
 
 
 
