@@ -61,16 +61,16 @@
 
                                 <div class="form-group">
                                     <label>Class</label>
-                                    <input type="radio" id="a" name="class">A
-                                    <input type="radio" id="b" name="class">B
-                                    <input type="radio" id="C" name="class">C
+                                    <input type="radio" id="a" name="class" value="a">A
+                                    <input type="radio" id="b" name="class" value="b">B
+                                    <input type="radio" id="C" name="class" value="c">C
 
 
                                 </div>
 
                                 <div class="form-group">
                                     <label>Category Name</label>
-                                    <input type="text" class="form-control pass-input" name="categoryname ">
+                                    <input type="text" class="form-control pass-input" name="categoryname">
 
 
                                 </div>

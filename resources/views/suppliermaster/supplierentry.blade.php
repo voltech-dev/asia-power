@@ -3,9 +3,6 @@
 @section('content')
 
 <?php
-$test = DB::table('suppliers')
-->orderBy('id', 'ASC')
-->get();
 ?>
 
 <!-- Page Header -->
@@ -34,22 +31,21 @@ $test = DB::table('suppliers')
 <!-- Search Filter -->
 <div id="filter_inputs" class="card filter-card">
     <div class="card-body pb-0">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group">
-                   
+        <form action="{{url('/searchsupplier')}}" method="POST" role="search">
+            @csrf
 
-<label>Supplier Name</label>
-</div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                <div class="form-group">
-                    <button type="submit"  class="btn btn-success"> Search</button>
-                </div>
+            <div class="input-group">
+                <input type="text" class="form-control" name="suppliername" placeholder="Search"> 
+                <span
+                    class="input-group-btn">
+                    <button type="submit" class="btn btn-default" style="border: 1px solid #dee2e6">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </span>
+
             </div>
-        </div>
+        </form>
     </div>
-</div>
 </div>
 <!-- /Search Filter -->
 

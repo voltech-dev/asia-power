@@ -10,6 +10,7 @@ use App\Models\Hsncode;
 use App\Models\Supplier;
 use App\Models\Category;
 use App\Models\Categoryspecific;
+use DB;
 
 
 class AdminController extends Controller
@@ -70,8 +71,22 @@ class AdminController extends Controller
     }
    public function customerentry()
    {
-       return view('customer.customerentry');
+    $admins = Customer::get();
+    
+    return view('customer.customerentry',['admins'=>$admins]);
+   
+       
    }
+   
+   public function searchcustomer(Request $request)
+   {
+
+           if($request->customername!=''){
+
+            $admins = Customer::where(['customername'=>$request->customername])->get();
+            return view('customer.customerentry',['admins'=>$admins]);
+           }
+        }
    public function customercreate()
    {
        return view('customer.customercreate');
@@ -112,8 +127,22 @@ class AdminController extends Controller
     }
     public function hsn()
    {
-       return view('hsn.hsn');
+       
+    $hsn =Hsncode::get();
+    
+    return view('hsn.hsn',['hsn'=>$hsn ]);
+    
    }
+   
+   public function searchhsn(Request $request)
+   {
+
+           if($request->code!=''){
+
+            $hsn =Hsncode::where(['code'=>$request->code])->get();
+            return view('hsn.hsn',['hsn'=>$hsn ]);
+           }
+        }
    public function hsncreate()
    {
        return view('hsn.hsncreate');
@@ -154,10 +183,22 @@ class AdminController extends Controller
     
     public function supplier()
     {
-        return view('suppliermaster.supplierentry',[
-            'suppliers'=>Supplier::all(),
-        ]);
+        
+    $test =Supplier::get();
+    
+    return view('suppliermaster.supplierentry',['test'=>$test ]);
+
     }
+    
+   public function searchsupplier(Request $request)
+   {
+
+           if($request->suppliername!=''){
+
+            $test =Supplier::where(['suppliername'=>$request->suppliername])->get();
+            return view('suppliermaster.supplierentry',['test'=>$test ]);
+           }
+        }
     
     public function suppliercreate()
     {
@@ -205,8 +246,14 @@ class AdminController extends Controller
     }
     public function categoryentry()
    {
-       return view('category.categoryentry');
-   }
+     
+     
+    $code = Categoryspecific::get();
+    
+    return view('category.categoryentry',['code'=>$code]);
+   
+
+}
    public function categorycreate()
    {
        return view('category.categorycreate');
@@ -258,8 +305,22 @@ class AdminController extends Controller
        $deleted = Categoryspecific::findorfail($id);    
        $deleted->delete();
        return redirect('/categoryentry');
-       
    
    }
+   public function search(Request $request)
+   {
+
+           if($request->specificationcode!=''){
+
+            $code = Categoryspecific::where(['specificationcode'=>$request->specificationcode])->get();
+            return view('category.categoryentry',['code'=>$code]);
+           }
+    
+    
+    
+   
+
+}
+
    
 }

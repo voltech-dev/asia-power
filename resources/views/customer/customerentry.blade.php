@@ -3,9 +3,7 @@
 @section('content')
 
 <?php
-$admins = DB::table('customers')
-->orderBy('id', 'ASC')
-->get();
+
 ?>
 
 <!-- Page Header -->
@@ -34,28 +32,23 @@ $admins = DB::table('customers')
 <!-- Search Filter -->
 <div id="filter_inputs" class="card filter-card">
     <div class="card-body pb-0">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control">
-                </div>
+        <form action="{{url('/searchcustomer')}}" method="POST" role="search">
+            @csrf
+
+            <div class="input-group">
+                <input type="text" class="form-control" name="customername" placeholder="Search"> 
+                <span
+                    class="input-group-btn">
+                    <button type="submit" class="btn btn-default" style="border: 1px solid #dee2e6">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </span>
+
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group">
-                    <label>Phone</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
+
 <!-- /Search Filter -->
 
 <div class="row">
