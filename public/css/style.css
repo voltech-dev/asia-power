@@ -946,7 +946,7 @@ button.bg-danger:hover {
     -webkit-box-shadow: 0 0 13px 0 rgba(82,63,105,0.05);
     box-shadow: 0 0 13px 0 rgba(82,63,105,0.05);
     margin-bottom: 30px;
-    border-radius: 20px;
+   /* border-radius: 20px;*/
     border: 0;
 }
 .card-body {
@@ -2300,8 +2300,10 @@ html.menu-opened body {
 	transition: all 0.2s ease-in-out 0s;
 	width: 240px;
 	z-index: 1001;
-	border-top-right-radius: 20px;
-	box-shadow: 0 0 13px 0 rgba(82,63,105,0.05);
+	/*border-top-right-radius: 20px;*/
+	border-top-right-radius: 0px;
+	/*box-shadow: 0 0 13px 0 rgba(82,63,105,0.05);*/
+	box-shadow: 0 0 0 0 rgba(82,63,105,0.05);
 	overflow-y: hidden;
 }
 .sidebar.opened {
