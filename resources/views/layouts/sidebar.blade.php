@@ -24,7 +24,9 @@
                 <li class="submenu ">
                     <a href="#"><i data-feather="grid"></i> <span>Purchase</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a class="" href="supplierentry">Supplier Master</a></li>
+                        <li><a class="" href="suppliercreate">Supplier Master</a></li>
+                        <li><a class="" href="category">Category</a></li>
+                        <li><a class="" href="categorylist">Category List</a></li>
 
                     </ul>
                 </li>

@@ -70,4 +70,11 @@ Route::get('/categoryedit/{id}',[App\Http\Controllers\AdminController::class, 'c
 Route::post('/updatecs/{id}',[App\Http\Controllers\AdminController::class, 'updatecs']);
 Route::get('/deleted/{id}',[App\Http\Controllers\AdminController::class, 'deleted']);
 
+Route::get('/category/',[App\Http\Controllers\AdminController::class, 'category_purchase'])->name('/category/');
+Route::get('/categorylist',[App\Http\Controllers\AdminController::class, 'category_list']);
+Route::post('/category_store',[App\Http\Controllers\AdminController::class, 'category_store']);
+Route::get('/category_edit/{id}',[App\Http\Controllers\AdminController::class, 'category_edit']);
+Route::post('/categoryupdate/{id}',[App\Http\Controllers\AdminController::class, 'categoryupdate']);
+Route::get('/categorydelete/{id}',[App\Http\Controllers\AdminController::class, 'category_delete']);
+
 
