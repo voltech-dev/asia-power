@@ -1,38 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
-/*
-Route::middleware('auth')->group( function () {
-    Route::get('/usercreate',[App\Http\Controllers\AdminController::class, 'show']);
-    Route::get('/userstore',[App\Http\Controllers\AdminController::class, 'show']);
-});
-*/
+
 Route::get('/user',[App\Http\Controllers\AdminController::class, 'user']);
 Route::get('/usercreate',[App\Http\Controllers\AdminController::class, 'usercreate']);
 Route::post('/userstore',[App\Http\Controllers\AdminController::class, 'userstore']);
 Route::post('/userupdate/{id}',[App\Http\Controllers\AdminController::class, 'userupdate']);
 Route::get('/edit-user/{id}',[App\Http\Controllers\AdminController::class, 'useredit']);
-
-#################### sales order ##################
-
-Route::get('/sales-add',[App\Http\Controllers\SalesController::class, 'salesadd']);
-
-################## end ##############################
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -76,11 +53,8 @@ Route::get('/categoryedit/{id}',[App\Http\Controllers\AdminController::class, 'c
 Route::post('/updatecs/{id}',[App\Http\Controllers\AdminController::class, 'updatecs']);
 Route::get('/deleted/{id}',[App\Http\Controllers\AdminController::class, 'deleted']);
 
-Route::get('/category/',[App\Http\Controllers\AdminController::class, 'category_purchase'])->name('/category/');
-Route::get('/categorylist',[App\Http\Controllers\AdminController::class, 'category_list']);
-Route::post('/category_store',[App\Http\Controllers\AdminController::class, 'category_store']);
-Route::get('/category_edit/{id}',[App\Http\Controllers\AdminController::class, 'category_edit']);
-Route::post('/categoryupdate/{id}',[App\Http\Controllers\AdminController::class, 'categoryupdate']);
-Route::get('/categorydelete/{id}',[App\Http\Controllers\AdminController::class, 'category_delete']);
+################### sales ################
 
 
+
+################## sales end ##############

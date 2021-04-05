@@ -14,7 +14,7 @@
                 <li class="submenu ">
                     <a href="#"><i data-feather="grid"></i> <span>Sales</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a class="" href="">Order</a></li>
+                        <li><a class="" href="{{url('/sales-add')}}">Order</a></li>
                         <li><a class="" href="customerentry">Customer Master</a></li>
                         <li><a class="" href="hsn">HSN/SAC</a></li>
 
