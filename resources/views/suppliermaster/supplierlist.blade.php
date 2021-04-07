@@ -3,9 +3,7 @@
 @section('content')
 
 <?php
-
 $category =App\Models\Category_Purchase::get();
-
 ?>
 
 <!-- Page Header -->
@@ -68,6 +66,7 @@ $category =App\Models\Category_Purchase::get();
                                 <th class="text-right">Actions</th>
                             </tr>
                         </thead>
+
                         <tbody>
                         @foreach($category as $category_purchase)
                         <tr>
@@ -81,6 +80,7 @@ $category =App\Models\Category_Purchase::get();
                                             class="far fa-edit mr-1"></i></a>                                </td> 
                         </tr>
                         @endforeach
+
                            
                         </tbody>
                     </table>
