@@ -46,29 +46,22 @@
                         <label for="sales_person" class="col-sm-2 col-form-label">Sales Person</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="sales_person" id="sales_person" class="form-control">
-
+                                <select name="sales_person" id="sales_person" class="form-control form-control-sm">
                                 </select>
                             </div>
-
-
                         </div>
                         <label for="order_type" class="col-sm-2 col-form-label">Order Type</label>
                         <div class="col-md-4">
                             <div class="form-group">
 
-                                <select name="order_type" id="order_type" class="form-control">
+                                <select name="order_type" id="order_type" class="form-control form-control-sm">
 
-                                    <option value="">Select Order Type</option>
+                                    <option value="" selected disabled>Select Order Type</option>
                                     <option value="Sales">Sales</option>
                                     <option value="Service">Service</option>
                                     <option value="Internal">Internal</option>
-
                                 </select>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -76,10 +69,9 @@
                         <label for="division" class="col-sm-2 col-form-label">Division</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="division" id="division" class="form-control">
-                                    <option> Select Division</option>
-                                    <option> Asia Power</option>
+                                <select name="division" id="division" class="form-control form-control-sm">
+                                    <option value="" selected disabled> Select Division</option>
+                                    <option value="Asia Power"> Asia Power</option>
 
                                 </select>
                             </div>
@@ -89,163 +81,117 @@
                         <label for="order_date" class="col-sm-2 col-form-label">Order Date</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="order_date" id="order_date" class="form-control datetimepicker"
-                                    value="">
-
+                                <input type="text" name="order_date" id="order_date"
+                                    class="form-control form-control-sm datetimepicker" value="">
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="py-3 text-lg leading-7 font-semibold"><a href="#"
                             class="underline text-gray-900 dark:text-white"><u>Order Details</u></a></div>
-
                     <div class="row">
                         <label for="customer" class="col-sm-2 col-form-label">Customer</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="customer" id="customer" class="form-control">
-                                    <option>Select....</option>
-
+                                <select name="customer" id="customer" class="form-control form-control-sm">
+                                    <option value="" disabled selected>Select....</option>
                                 </select>
                             </div>
-
-
                         </div>
                         <label for="end_user" class="col-sm-2 col-form-label">End User</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="end_user" id="end_user" class="form-control" value="">
-
+                                <input type="text" name="end_user" id="end_user" class="form-control form-control-sm"
+                                    value="">
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="customer_cat" class="col-sm-2 col-form-label">Customer Category</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="customer_cat" id="customer_cat" class="form-control">
-                                    <option>Select....</option>
-
+                                <select name="customer_cat" id="customer_cat" class="form-control form-control-sm">
+                                    <option value="" disabled selected>Select....</option>
                                 </select>
                             </div>
-
-
                         </div>
                         <label for="project_name" class="col-sm-2 col-form-label">Project Name</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="project_name" id="project_name" class="form-control" value="">
-
+                                <input type="text" name="project_name" id="project_name"
+                                    class="form-control form-control-sm" value="">
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="project_site" class="col-sm-2 col-form-label">Project Site</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <input type="text" name="project_site" id="project_site" class="form-control" value="">
+                                <input type="text" name="project_site" id="project_site"
+                                    class="form-control form-control-sm" value="">
                             </div>
-
-
                         </div>
                         <label for="customer_po" class="col-sm-2 col-form-label">Customer PO NO</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="customer_po" id="customer_po" class="form-control" value="">
-
+                                <input type="text" name="customer_po" id="customer_po"
+                                    class="form-control form-control-sm" value="">
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="po_date" class="col-sm-2 col-form-label">Po Date</label>
                         <div class="col-md-4">
                             <div class="form-group">
 
-                                <input type="text" name="po_date" id="po_date" class="form-control datetimepicker"
-                                    value="">
+                                <input type="text" name="po_date" id="po_date"
+                                    class="form-control form-control-sm datetimepicker" value="">
                             </div>
-
-
                         </div>
-
                     </div>
-
                     <div class="py-3 text-lg leading-7 font-semibold"><a href="#"
                             class="underline text-gray-900 dark:text-white"><u>Terms & Conditions</u></a></div>
-
                     <div class="row">
                         <label for="EMD" class="col-sm-2 col-form-label">EMD</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <textarea name="EMD" id="EMD" class="form-control" value=""> </textarea>
+                                <textarea name="EMD" id="EMD" class="form-control form-control-sm" value=""> </textarea>
                             </div>
-
-
                         </div>
                         <label for="SD" class="col-sm-2 col-form-label">SD</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <textarea name="SD" id="SD" class="form-control" value=""> </textarea>
+                                <textarea name="SD" id="SD" class="form-control form-control-sm" value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
-
                     <div class="row">
                         <label for="payment_terms" class="col-sm-2 col-form-label">Payment Terms</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <textarea name="payment_terms" id="payment_terms" class="form-control"
+                                <textarea name="payment_terms" id="payment_terms" class="form-control form-control-sm"
                                     value=""> </textarea>
                             </div>
-
-
                         </div>
                         <label for="payment_mode" class="col-sm-2 col-form-label">Payment Mode</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <select name="payment_mode" id="payment_mode" class="form-control">
-                                    <option>Select....</option>
+                                <select name="payment_mode" id="payment_mode" class="form-control form-control-sm">
+                                    <option value="" selected disabled>Select....</option>
                                     <option value="DD">DD</option>
                                     <option value="Cheque">Cheque</option>
                                     <option value="Elec-Transfer">Elec-Transfer</option>
                                     <option value="LC">LC</option>
                                     <option value="COT(cash on Time)">COT(cash on Time)</option>
-
                                 </select>
-
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="delivery_terms" class="col-sm-2 col-form-label">Delivery Terms</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="delivery_terms" id="delivery_terms" class="form-control">
-                                    <option>Select....</option>
+                                <select name="delivery_terms" id="delivery_terms" class="form-control form-control-sm">
+                                    <option value="" disabled selected>Select....</option>
                                     <option value="EXW">EXW</option>
                                     <option value="FCA">FCA</option>
                                     <option value="FAS">FAS</option>
@@ -260,32 +206,24 @@
                                     <option value="DDU">DDU</option>
                                     <option value="DDP">DDP</option>
                                     <option value="Others">Others</option>
-
-
                                 </select>
                             </div>
-
-
                         </div>
                         <label for="location" class="col-sm-2 col-form-label">Location</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="location" id="location" class="form-control" value="">
-
+                                <input type="text" name="location" id="location" class="form-control form-control-sm"
+                                    value="">
                             </div>
-
-
                         </div>
                     </div>
                     <div class="row">
                         <label for="other_terms" class="col-sm-2 col-form-label">Other Terms</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="other_terms" id="other_terms" class="form-control" value=""> </textarea>
+                                <textarea name="other_terms" id="other_terms" class="form-control form-control-sm"
+                                    value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -293,91 +231,65 @@
                         <label for="delivery_period" class="col-sm-2 col-form-label">Delivery Period</label>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="delivery_period" id="delivery_period" class="form-control"
-                                    value="">
-
+                                <input type="text" name="delivery_period" id="delivery_period"
+                                    class="form-control form-control-sm" value="">
                             </div>
-
-
                         </div>
                         <label for="liquidate_damage" class="col-sm-2 col-form-label">Liquidate Damage</label>
                         <div class="col-md-4">
                             <div class="form-group">
-
-                                <select name="liquidate_damage" id="liquidate_damage" class="form-control">
-                                    <option>Select....</option>
+                                <select name="liquidate_damage" id="liquidate_damage"
+                                    class="form-control form-control-sm">
+                                    <option value="" selected disabled>Select....</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
-
                                 </select>
-
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="ld_terms" class="col-sm-2 col-form-label">LD Terms</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="ld_terms" id="ld_terms" class="form-control" value=""> </textarea>
+                                <textarea name="ld_terms" id="ld_terms" class="form-control form-control-sm"
+                                    value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="warranty" class="col-sm-2 col-form-label">Warranty /Guarantee</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="warranty" id="warranty" class="form-control" value=""> </textarea>
+                                <textarea name="warranty" id="warranty" class="form-control form-control-sm"
+                                    value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="statutory" class="col-sm-2 col-form-label">Statutory</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="statutory" id="statutory" class="form-control" value=""> </textarea>
+                                <textarea name="statutory" id="statutory" class="form-control form-control-sm" value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="spl_instruction" class="col-sm-2 col-form-label">Special Instruction</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="spl_instruction" id="spl_instruction" class="form-control"
+                                <textarea name="spl_instruction" id="spl_instruction" class="form-control form-control-sm"
                                     value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
                     <div class="row">
                         <label for="remarks" class="col-sm-2 col-form-label">Remarks</label>
                         <div class="col-md-10">
                             <div class="form-group">
-
-                                <textarea name="remarks" id="remarks" class="form-control" value=""> </textarea>
+                                <textarea name="remarks" id="remarks" class="form-control form-control-sm" value=""> </textarea>
                             </div>
-
-
                         </div>
                     </div>
-
                     <div id="sale-tax" style="">
                         <div class="row">
                             <div class="col-sm-2"></div>
@@ -392,7 +304,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div id="temptable">
                         </div>
@@ -464,7 +375,7 @@
                                 <label for="uom" class="col-sm-1 col-form-label">UOM</label>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                    
+
                                         <select name="uom" id="uom" class="form-control">
                                             <option>Nos</option>
                                             <option>Kg</option>
@@ -510,7 +421,8 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
 
-                                        <input type="text" name="estimated_rmc" id="estimated_rmc" class="form-control" value="">
+                                        <input type="text" name="estimated_rmc" id="estimated_rmc" class="form-control"
+                                            value="">
                                     </div>
                                 </div>
 
@@ -518,7 +430,8 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
 
-                                        <input type="text" name="dwg_app_date" id="dwg_app_date" class="form-control" value="">
+                                        <input type="text" name="dwg_app_date" id="dwg_app_date" class="form-control"
+                                            value="">
                                     </div>
                                 </div>
 
@@ -537,7 +450,8 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
 
-                                        <input type="text" name="estimated_rmc" id="estimated_rmc" class="form-control" value="">
+                                        <input type="text" name="estimated_rmc" id="estimated_rmc" class="form-control"
+                                            value="">
                                     </div>
                                 </div>
 
@@ -545,7 +459,8 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
 
-                                        <input type="text" name="dwg_app_date" id="dwg_app_date" class="form-control" value="">
+                                        <input type="text" name="dwg_app_date" id="dwg_app_date" class="form-control"
+                                            value="">
                                     </div>
                                 </div>
 

@@ -16,7 +16,24 @@
                     <ul>
                         <li><a class="" href="{{url('/sales-add')}}">Order</a></li>
                         <li><a class="" href="customerentry">Customer Master</a></li>
-                        <li><a class="" href="hsn">HSN/SAC</a></li>
+                        <li><a class="" href="hsn">HSN/SAC Code</a></li>
+                        <li><a class="" href="">Proforma Invoice</a></li>
+                        <li><a class="" href="">Invoice</a></li>
+                        <li><a class="" href="">Credit Note</a></li>
+                        <li><a class="" href="">Sales Report</a></li>
+                        <li><a class="" href="">Invoice - TNEB</a></li>
+                        <li><a class="">TNEB Reports <span class="menu-arrow"></span></a>
+                        <ul>
+                        <li><a class="" href="">Stage 3</a></li>
+                        <li><a class="" href="">Cash Register Report</a></li>
+                        <li><a class="" href="">Payment Report</a></li>
+                        </ul>
+                        </li>
+                        <li><a class=""><span class="menu-arrow"></span>GST Pay</a>
+                        <ul>
+                        <li><a class="" href="">GST Pay Form</a></li>
+                        </ul>
+                        </li>
 
                     </ul>
                 </li>

@@ -33,7 +33,7 @@ Route::get('/edit-user/{id}',[App\Http\Controllers\AdminController::class, 'user
 Route::get('/sales-add',[App\Http\Controllers\SalesController::class, 'salesadd']);
 
 ################## end ##############################
-
+ 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
